@@ -10,10 +10,10 @@ If the role is admin print "welcome admin"
 If the role is superuser print "welcome superuser"
 If the role is user print "welcome user"*/
 
-    System.out.println("checks the role of the user: " +
-            "\n 1-role is admin " +
-            "\n 2-role is superuser " +
-            "\n 3-role is user \n");
+    System.out.println("Enter your role : " +
+            "\n 1- admin " +
+            "\n 2- superuser " +
+            "\n 3- user \n");
     int numberRole = input.nextInt();
     if (numberRole == 1) {
         System.out.println("welcome admin");
