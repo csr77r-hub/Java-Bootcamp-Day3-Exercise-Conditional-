@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 
 void main() {
@@ -56,10 +57,10 @@ Test Data
 number: 4
 Expected Output:
 Wednesday*/
-
-    System.out.print("number: ");
-    int num = input.nextInt();
-    switch (num) {
+    Random randomNum = new Random();//I learned the method from here.(https://www.geeksforgeeks.org/java/generating-random-numbers-in-java/)
+    int randomNumber = randomNum.nextInt(7);
+    System.out.println("This is randomNumber("+randomNumber+")");
+    switch (randomNumber) {
         case 1:
             System.out.println("Sunday");
             break;
@@ -100,19 +101,19 @@ Letter Grade: B */
 
     System.out.print("Enter your numeric score:");
     int grade = input.nextInt();
-    if (grade < 100 && grade > 90) {
+    if (grade <= 100 && grade >= 90) {
         System.out.println("Numeric Score:" + grade);
         System.out.println("Letter Grade: A");
-    } else if (grade < 89 && grade > 80) {
+    } else if (grade <= 89 && grade >= 80) {
         System.out.println("Numeric Score:" + grade);
         System.out.println("Letter Grade: B");
-    } else if (grade < 79 && grade > 70) {
+    } else if (grade <= 79 && grade >= 70) {
         System.out.println("Numeric Score:" + grade);
         System.out.println("Letter Grade: C");
-    } else if (grade < 69 && grade > 60) {
+    } else if (grade <= 69 && grade >= 60) {
         System.out.println("Numeric Score:" + grade);
         System.out.println("Letter Grade: D");
-    } else if (grade < 59 && grade > 0) {
+    } else if (grade <= 59 && grade >= 0) {
         System.out.println("Numeric Score:" + grade);
         System.out.println("Letter Grade: F");
     } else {
@@ -135,11 +136,11 @@ You are an Adult.*/
     System.out.print("Enter your age:");
     int age=input.nextInt();
 
-    if (age < 13 && age > 0) {
+    if (age <= 13 && age >= 0) {
         System.out.println("You are an Child.");
-    } else if (age < 19 && age > 13) {
+    } else if (age <= 19 && age >= 13) {
         System.out.println("You are an Teenager.");
-    } else if (age > 20) {
+    } else if (age >= 20) {
         System.out.println("You are an Adult.");
     } else {
         System.out.println("Invalid");
